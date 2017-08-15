@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*日期*/
+.cale-wrap {
+	padding: 20px;
+	margin-bottom: 165px;
+}
+
+.calendar {
+	position: relative;
+	width: 400px;
+	padding: 20px;
+	margin:  0 auto;
+	border: 1px solid #ccc;
+}
+
+
+
+
+.my-date {
+	position: absolute;
+}

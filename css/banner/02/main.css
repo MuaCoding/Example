@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@charset "utf-8";
+
+body{
+	background-color: #ececec;
+	padding-top: 50px;
+}
+/*图片轮播*/
+#automation {
+	position: relative;
+	width: 970px;
+	height: 344px;
+	margin: 90px auto;
+	overflow: hidden;
+}
+
+.prevDiv {
+	position: absolute;
+	top: 128px;
+	left: 92px;
+	width: 130px;
+	height: 72px;
+	z-index: 5;
+	background: red; 
+	filter: alpha(opacity=0); opacity: 0;
+	cursor: pointer;
+}
+
+.nextDiv {
+	position: absolute;
+	top: 128px;
+	right: 92px;
+	width: 130px;
+	height: 72px;
+	z-index: 5;
+	background: red; 
+	filter: alpha(opacity=0); opacity: 0;
+	cursor: pointer;
+}
+
+#automation .prev {
+	position: absolute;
+	top: 108px;
+	left: 72px;
+	width: 120px;
+	height: 72px;
+	z-index: 4;
+}
+
+#automation .prev .ico {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 76px;
+	height: 112px;
+	background: url("/images/banner/prev.png");
+}
+#automation .prev .ico1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 76px;
+	height: 112px;
+	background: url("/images/banner/prev_1.png");
+	z-index: 2;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+#automation .prev .txt {
+	position: absolute;
+	top: 0;
+	left: 65px;
+	width: 106px;
+	height: 112px;
+	background: url("/images/banner/prev_txt.png") no-repeat;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+#automation .next {
+	position: absolute;
+	top: 108px;
+	right: 72px;
+	width: 120px;
+	height: 72px;
+	z-index: 4;
+}
+
+#automation .next .ico {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 76px;
+	height: 112px;
+	background: url("/images/banner/next.png") no-repeat;
+}
+
+#automation .next .ico1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 76px;
+	height: 112px;
+	background: url("/images/banner/next_1.png") no-repeat;
+	z-index: 2;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+#automation .next .txt {
+	position: absolute;
+	top: 0;
+	right: 65px;
+	width: 106px;
+	height: 112px;
+	background: url("/images/banner/next_txt.png") no-repeat;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+#automation ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 970px;
+	height: 344px;
+	z-index: 1;
+}
+
+#automation li {
+	position: absolute;
+}
+
+#automation .line {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: block;
+	margin-left: -340px;
+	width: 672px;
+	height: 336px;
+	border: 4px solid #fff;
+	z-index: 3;
+}
+
+#automation .pos-0 {
+	top: -104px;
+	left: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 1;
+}
+
+#automation .pos-1 {
+	top: 104px;
+	left: 0;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	z-index: 2;
+}
+#automation .pos-2 {
+	top: 43px;
+	left: 50px;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	z-index: 3;
+}
+#automation .pos-3 {
+	top: 0;
+	left: 145px;
+	z-index: 4;
+}
+#automation .pos-4 {
+	top: 43px;
+	right: 50px;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	z-index: 3;
+}
+#automation .pos-5 {
+	top: 104px;
+	right: 0;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	z-index: 2;
+}
+
+#automation .pos-6 {
+	top: -104px;
+	right: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 1;
+}

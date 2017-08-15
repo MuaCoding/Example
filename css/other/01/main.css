@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*乘法口诀表  */
+
+div.cell {
+	display: inline-block;
+	width: 60px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: -1px -1px 0 0;
+	text-align: center;
+	opacity: 0;
+}

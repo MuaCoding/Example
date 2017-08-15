@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/*下拉菜单列表  */
+
+.slide {
+	width: 260px;
+	height: 500px;
+	background-color: #1c2b36;
+}
+
+.slide .slide-tit {
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 16px;
+	color: #f2f2ff;
+	background-color: #0065a5;
+}
+
+.slide .slide-main {
+	width: 260px;
+	background-color: #354045;
+}
+
+.slide .slide-main ul li {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.slide .slide-main ul li .slide-main-tit {
+	float: left;
+	width: 260px;
+	height: 60px;
+	margin-bottom: 1px;
+	line-height: 60px;
+	text-align: center;
+	color: #f2f2f2;
+	font-size: 14px;
+	background-color: #131e26;
+	cursor: pointer;
+}
+
+.slide .slide-main ul li img {
+	float: left;
+	margin-left: -40px;
+	margin-top: 27px;
+}
+
+.slide .slide-main ul li .sub-slide {
+	display: none;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.slide .slide-main ul li .sub-slide .sub {
+	display: block;
+	height: 60px;
+	margin-bottom: 1px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 14px;
+	color: #869fb1;
+	background-color: #131e26;
+	cursor: pointer;
+}
+
+.slide .slide-main ul li .sub-slide .sub:hover {
+	color: #fff;
+	background-color: #1c2b36;
+}
+
+.active {
+	color: #0FB9EF;
+	border-left: 3px solid #0FB9EF;
+}
+
+
+
+/*下拉菜单 start*/
+.accordion {
+	width: 500px;
+	font-size: 22px;
+	padding: 40px 20px;
+	margin: auto;
+}
+
+.list {
+	padding: 0 60px;
+}
+
+.list li {
+	list-style:decimal;
+	line-height: 50px;
+	
+}
+
+.list li + li {
+	border-top: 1px solid #f2f2f2;
+}
+
+.list li h1 {
+	font-size: 22px;
+	font-family: normal;
+	font-family: "Hiragino Sans GB", "Hiragino Sans GB W3", '微软雅黑';
+}
+
+.list li a {
+	display: block;
+	padding: 5px 8px;
+	transition: all .6s;
+	color: #0a8cd2;
+	text-decoration: none;
+}
+
+.list li a:hover {
+	border-radius: 5px;
+	color: #fff;
+	text-indent: 25px;
+	text-shadow: 0 2px 1px #360;
+	background-color: #393;
+	*background-color: #51a351;
+	background-image: -moz-linear-gradient(top, #62c462, #51a351);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+	background-image: -o-linear-gradient(top, #62c462, #51a351);
+	background-image: linear-gradient(to bottom, #62c462, #51a351);
+	background-repeat: repeat-x;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+}
+
+.list li h1 a:hover {
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 0 2px 1px #360;
+	background-color: #393;
+	*background-color: #51a351;
+	background-image: -moz-linear-gradient(top, #62c462, #51a351);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+	background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+	background-image: -o-linear-gradient(top, #62c462, #51a351);
+	background-image: linear-gradient(to bottom, #62c462, #51a351);
+	background-repeat: repeat-x;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	text-decoration: none;
+}
+
+.sub-dl {
+	display: none;
+}
+
+.sub-dl a {
+	margin-left: 25px;
+}
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+#star {
+	position: relative;
+	margin-bottom: 100px;
+	margin: auto;
+	width: 500px;
+}
+
+#star span,
+#star ul {
+	float: left;
+	height: 19px;
+	line-height: 19px;
+}
+
+#star ul {
+	margin: 0 10px;
+}
+
+#star ul li {
+	float: left;
+	width: 24px;
+	height: 19px;
+	text-indent: -9999px;
+	background: url("/images/icon/star.png") no-repeat;
+	cursor: pointer;
+}
+
+#star ul li.on {
+	background-position: 0 -28px;
+}
+
+#star p {
+	position: absolute;
+	display: none;
+	top: 30px;
+	width: 159px;
+	height: 60px;
+	padding: 7px 10px 0;
+	background-color: #eee;
+}
+
+#star p:after {
+	content: " ";
+	position: absolute;
+	left: 80px;
+	top: -48px;
+	width: 0;
+	height: 0;
+	border-width: 0 10px 10px;
+	border-style: solid;
+	border-color: transparent transparent #eee;
+	/*透明 透明  灰*/
+	margin: 40px auto;
+}
+
+#star p em {
+	display: block;
+	color: #f60;
+	font-style: normal;
+}
+
+#star strong {
+	color: #f60;
+	padding-left: 10px;
+}
