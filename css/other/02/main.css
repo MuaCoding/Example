@@ -1,141 +1,68 @@
 @charset "UTF-8";
 
 
-/*榜单  */
-
-.billboard-box {
-	border: 1px solid #ccc;
-	border-bottom: 0;
-	zoom: 1;
-}
-
-.billboard {
+#star {
 	position: relative;
-	width: 250px;
-	min-height: 260px;
+	margin-bottom: 100px;
 	margin: auto;
+	width: 500px;
 }
 
-.billboard .billboard-head {
-	padding: 0px;
-	height: 37px;
-	line-height: 37px;
-	font-size: 15px;
-}
-
-.billboard .billboard-head .billboard-head-tab {
+#star span,
+#star ul {
 	float: left;
-	width: 50%;
-	color: #999;
-	text-align: center;
-}
-
-.billboard .billboard-head .billboard-head-tab+.billboard-head-tab {
-	margin-left: -1px;
-	border-left: 1px solid #ccc;
-}
-
-.billboard-head {
-	position: relative;
-	background-color: #f1f1f1;
-	border-bottom: 1px solid #ccc;
-}
-
-.billboard .billboard-head .check {
-	margin-top: -1px;
-	border-top: 2px solid #ff7a01;
-	background-color: #fff;
-	color: #333;
-}
-
-.billboard .gamerank-list {
-	background-color: #fff;
-}
-
-.billboard .gamerank-list-item {
-	position: relative;
-	padding: 7px 0;
-	border-bottom: 1px solid #dcdcdc;
-	vertical-align: middle;
-}
-
-.billboard .gamerank-list-item .brief {
-	margin-left: 40px;
-}
-
-.billboard .gamerank-list-item .brief .number {
-	background-color: #d08846;
-}
-
-.billboard .gamerank-list-item .number {
-	position: absolute;
-	top: 8px;
-	left: 8px;
-	display: block;
-	width: 22px;
-	height: 22px;
-	line-height: 22px;
-	background-color: #bdbdbd;
-	text-align: center;
-	color: #fff;
-}
-
-.billboard .gamerank-list-item .brief .name {
-	height: 22px;
-	line-height: 22px;
-	font-size: 14px;
-}
-
-.billboard .gamerank-list-item .name {
-	height: 17px;
-	line-height: 17px;
-	font-size: 13px;
-	color: #333;
-}
-.billboard .hover .detail {
-    display: block;
-}
-.billboard .detail {
-	position: relative;
-	margin: 10px 0 0 8px;
-	display: none;
-}
-
-.billboard .gamerank-list-item .detail .pic-box {
-	float: left;
-	margin-left: 34px;
-	width: 64px;
-	height: 64px;
-	border-radius: 6px;
-}
-
-.billboard .gamerank-list-item .txt-wrap {
-	padding-left: 10px;
-	padding-top: 5px;
-	overflow: hidden;
-	zoom: 1;
-}
-
-.billboard .gamerank-list-item .detail .popular,
-.billboard .gamerank-list-item .detail .type {
 	height: 19px;
 	line-height: 19px;
-	color: #999;
 }
 
-.billboard .gamerank-list-item .detail .popular .highlight {
-	color: #ff7a01;
-	font-weight: 400;
+#star ul {
+	margin: 0 10px;
 }
 
-.billboard .gamerank-list-item .detail .download-btn {
+#star ul li {
+	float: left;
+	width: 24px;
+	height: 19px;
+	text-indent: -9999px;
+	background: url("https://xiaomingli.github.io/hexo/images/icon/star.png") no-repeat;
+	cursor: pointer;
+}
+
+#star ul li.on {
+	background-position: 0 -28px;
+}
+
+#star p {
+	position: absolute;
+	display: none;
+	top: 30px;
+	width: 159px;
+	height: 60px;
+	padding: 7px 10px 0;
+	background-color: #eee;
+}
+
+#star p:after {
+	content: " ";
+	position: absolute;
+	left: 80px;
+	top: -48px;
+	width: 0;
+	height: 0;
+	border-width: 0 10px 10px;
+	border-style: solid;
+	border-color: transparent transparent #eee;
+	/*透明 透明  灰*/
+	margin: 40px auto;
+}
+
+#star p em {
 	display: block;
-	padding: 1px;
-	width: 38px;
-	height: 18px;
-	line-height: 18px;
-	font-size: 13px;
-	text-align: center;
-	background-color: #ff7a01;
-	color: #fff;
+	color: #f60;
+	font-style: normal;
+}
+
+#star strong {
+	color: #f60;
+	padding-left: 10px;
 }
