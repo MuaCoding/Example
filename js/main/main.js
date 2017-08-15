@@ -13,13 +13,13 @@
                             title: "常用的图片轮播相关"
                         },
                         {
-                            url: "https://xiaomingli.github.io/hexo/views/banner/01/index.html",
+                            url: "/hexo/views/banner/01/index.html",
                             title: "css3 选择轮播图"
                         },{
-                            url: 'https://xiaomingli.github.io/hexo/views/banner/02/index.html',
+                            url: '/hexo/views/banner/02/index.html',
                             title: "仿CF轮播图"
                         },{
-                            url: 'https://xiaomingli.github.io/hexo/views/banner/03/index.html',
+                            url: '/hexo/views/banner/03/index.html',
                             title: "榜单tab切换"
                         }
                     ],
@@ -28,7 +28,7 @@
                             title: "时间日期效果"
                         },
                         {
-                            url: "https://xiaomingli.github.io/hexo/views/date/01/index.html",
+                            url: "/hexo/views/date/01/index.html",
                             title: "全日历"
                         }
                     ],
@@ -52,11 +52,11 @@
                             title: "其他练习"
                         },
                         {
-                            url: "https://xiaomingli.github.io/hexo/views/other/01/index.html",
+                            url: "/hexo/views/other/01/index.html",
                             title: "乘法口诀表"
                         },
                         {
-                            url: 'https://xiaomingli.github.io/hexo/views/other/02/index.html',
+                            url: '/hexo/views/other/02/index.html',
                             title: "星级评价"
                         }
                     ]
