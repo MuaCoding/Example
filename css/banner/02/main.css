@@ -54,7 +54,7 @@ body{
 	left: 0;
 	width: 76px;
 	height: 112px;
-	background: url("/images/banner/prev.png");
+	background: url("/hexo/images/banner/prev.png");
 }
 #automation .prev .ico1 {
 	position: absolute;
@@ -62,7 +62,7 @@ body{
 	left: 0;
 	width: 76px;
 	height: 112px;
-	background: url("/images/banner/prev_1.png");
+	background: url("/hexo/images/banner/prev_1.png");
 	z-index: 2;
 	filter: alpha(opacity=0);
 	opacity: 0;
@@ -73,7 +73,7 @@ body{
 	left: 65px;
 	width: 106px;
 	height: 112px;
-	background: url("/images/banner/prev_txt.png") no-repeat;
+	background: url("/hexo/images/banner/prev_txt.png") no-repeat;
 	filter: alpha(opacity=0);
 	opacity: 0;
 }
@@ -93,7 +93,7 @@ body{
 	right: 0;
 	width: 76px;
 	height: 112px;
-	background: url("/images/banner/next.png") no-repeat;
+	background: url("/hexo/images/banner/next.png") no-repeat;
 }
 
 #automation .next .ico1 {
@@ -102,7 +102,7 @@ body{
 	right: 0;
 	width: 76px;
 	height: 112px;
-	background: url("/images/banner/next_1.png") no-repeat;
+	background: url("/hexo/images/banner/next_1.png") no-repeat;
 	z-index: 2;
 	filter: alpha(opacity=0);
 	opacity: 0;
@@ -113,7 +113,7 @@ body{
 	right: 65px;
 	width: 106px;
 	height: 112px;
-	background: url("/images/banner/next_txt.png") no-repeat;
+	background: url("/hexo/images/banner/next_txt.png") no-repeat;
 	filter: alpha(opacity=0);
 	opacity: 0;
 }
