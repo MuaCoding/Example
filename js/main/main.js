@@ -16,18 +16,10 @@
                             url: "/hexo/views/banner/01/index.html",
                             title: "css3 选择轮播图"
                         },{
-<<<<<<< HEAD
-                            url: '/views/banner/02/index.html',
-                            title: "产品展示效果"
-=======
-                            url: '/hexo/views/banner/02/index.html',
-                            title: "仿CF轮播图"
->>>>>>> 0529fed30f57e66fa81c7b20d152567d4bc58d32
-                        },{
                             url: '/hexo/views/banner/03/index.html',
                             title: "榜单tab切换"
                         },{
-                            url: '/views/banner/04/index.html',
+                            url: '/hexo/views/banner/04/index.html',
                             title: "基础轮播"
                         }
                     ],
