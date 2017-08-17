@@ -60,6 +60,7 @@ window.onload = function(){
 		aLi[i].top = aLiInit[i].t = aLi[i].offsetTop;
 		aLi[i].alpha = aLiInit[i].alpha = 0;
 		aLi[i].z = aLiInit[i].z = 1;
+		
 	};
 
 	for(i= 0;i<aLi.length;i++){
@@ -117,9 +118,11 @@ window.onload = function(){
 		}else{
 			aLiInit.unshift(aLiInit.pop());
 		};
+
 		oLine.style.display = 'none';
+
 		for(i =0;i<aLi.length;i++){
-			startMove(aLi[i],{left: aLiInit[i].l,top:aLiInit.t,width: aLiInit[i].w,height: aLiInit[i].h,alpha: aLiInit[i].alpha,zIndex:aLiInit[i].z},300,function(){oLine.style.display='block';});
+			startMove(aLi[i],{left: aLiInit[i].l, top:aLiInit[i].t, width: aLiInit[i].w, height: aLiInit[i].h, alpha: aLiInit[i].alpha, zIndex:aLiInit[i].z},300,function(){oLine.style.display='block';});
 		}
 	}
 
@@ -139,10 +142,10 @@ function startMove(obj,oParams, iTime, fnCallBackEnd){
 	for(key in oParams){
 		oSpeed[key] = (oParams[key] - obj[key])/iTimes;
 	}
-
 	if (obj.timer) {
 		clearInterval(obj.timer);
 	};
+	// ????????
 	obj.timer = setInterval(
 		function(){
 			doMove(obj,oParams,oSpeed,iEndTime,fnCallBackEnd)
