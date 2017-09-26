@@ -123,6 +123,7 @@ window.onload = function(){
 
 		for(i =0;i<aLi.length;i++){
 			startMove(aLi[i],{left: aLiInit[i].l, top:aLiInit[i].t, width: aLiInit[i].w, height: aLiInit[i].h, alpha: aLiInit[i].alpha, zIndex:aLiInit[i].z},300,function(){oLine.style.display='block';});
+
 		}
 	}
 
