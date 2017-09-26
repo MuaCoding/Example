@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/banner/06/main.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_159034_5k4bu2tb6hl4n29.css">
+    <script type="text/javascript" src="../../../js/plugin/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../../../js/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <title>banner</title>
+</head>
+
+<body>
+    <!-- 多列滚动 -->
+    <div class="multipleColumn" style="margin:0 auto">
+        <div class="hd">
+            <a class="next"></a>
+            <a class="prev"></a>
+        </div>
+        <div class="bd">
+            <div class="tempWrap" style="overflow:hidden; position:relative; width:852px">
+                <div class="ulWrap" style="width: 2272px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -568px;">
+                    <ul class="clone" style="float: left; width: 284px;">
+                        <!-- 把每次滚动的n个li放到1个ul里面 -->
+                        <li>
+                            <div class="pic"><a><img src=""></a></div>
+                            <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图4</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src=""></a></div>
+                            <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图4</a></div>
+                        </li>
+                    </ul>
+                    <ul style="float: left; width: 284px;">
+                        <!-- 把每次滚动的n个li放到1个ul里面 -->
+                        <li>
+                            <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src=""></a></div>
+                            <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图4</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src=""></a></div>
+                            <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图4</a></div>
+                        </li>
+                       
+                    </ul>
+                    <ul class="clone" style="float: left; width: 284px;">
+                        <!-- 把每次滚动的n个li放到1个ul里面 -->
+                        <li>
+                            <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src=""></a></div>
+                            <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图1</a></div>
+                        </li>
+                        <li>
+                            <div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src=""></a></div>
+                            <div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图1</a></div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!-- ulWrap End -->
+        </div>
+        <!-- bd End -->
+    </div>
+    
+    <script type="text/javascript">
+        jQuery(".multipleColumn").slide({titCell:".hd ul",mainCell:".bd .ulWrap",autoPage:false,effect:"leftLoop",autoPlay:false,vis:3});
+    </script>
+    <script type="text/javascript">
+    var ary = location.href.split("&");
+        jQuery(".picScroll-left").slide( { titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:ary[1],autoPlay:ary[2],scroll:ary[3],vis:ary[4],easing:ary[5],delayTime:ary[6],pnLoop:ary[7],trigger:ary[8],mouseOverStop:ary[9] });
+    
+    </script>
+</body>
+
+</html>

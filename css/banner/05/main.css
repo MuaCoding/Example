@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.turn {
+    position: relative;
+    width: 302px;
+    height: 134px;
+    margin: 50px auto; 
+    overflow: hidden;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.turn .turn-pic li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	filter: alpha(opacity=1);
+	opacity: 1;
+}
+
+.turn .turn-pic li img{
+	width: 302px;
+	height: 134px;
+	overflow: hidden;
+}

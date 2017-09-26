@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/banner/07/main.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_159034_5k4bu2tb6hl4n29.css">
+    <script type="text/javascript" src="../../../js/plugin/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../../../js/plugin/jquery.SuperSlide.2.1.1.js"></script>
+    <title>banner</title>
+    <style type="text/css">
+    	
+    </style>
+</head>
+
+<body>
+    <!-- 单列滚动 -->
+   	<div class="picScroll-left">
+			<div class="hd">
+				<a class="next"></a>
+				<ul></ul>
+				<a class="prev"></a>
+				<span class="pageState"></span>
+			</div>
+			<div class="bd">
+				<ul class="picList">
+					<li>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="/images/dot/pic1.jpg" /></a></div>
+						<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图1</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="/images/dot/pic2.jpg" /></a></div>
+						<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图2</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="/images/dot/pic3.jpg" /></a></div>
+						<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图3</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="/images/dot/pic4.jpg" /></a></div>
+						<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图4</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="/images/dot/pic5.jpg" /></a></div>
+						<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图5</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="http://www.SuperSlide2.com" target="_blank"><img src="/images/dot/pic6.jpg" /></a></div>
+						<div class="title"><a href="http://www.SuperSlide2.com" target="_blank">效果图6</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:2,trigger:"click",scroll: 1});
+		(function(){
+			$(".picScroll-left").css("width",$(".tempWrap").width() +20)
+		})()
+		</script>
+</body>
+
+</html>

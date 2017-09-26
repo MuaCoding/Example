@@ -22,7 +22,7 @@ window.onload = function(){
 		h = function(){
 			++a >= b.length && (a = 0);
 			e(a);
-		},
+		}, 
 		e = function(a){
 			d.style.left = -860 * a +'px';
 			dot(a)
@@ -65,4 +65,8 @@ window.onload = function(){
 	next.onclick = function(){
 		h();
 	}
+
+	
 }
+
+
