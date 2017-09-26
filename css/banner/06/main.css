@@ -1,0 +1,127 @@
+/* 本例子css */
+
+.multipleColumn {
+    overflow: hidden;
+    position: relative;
+    width: 870px;
+    border: 1px solid #ccc;
+}
+
+
+.multipleColumn .hd .prev{
+	position: absolute;
+    display: block;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    top: 50%;
+    right: 15px;
+    width: 36px;
+    height: 72px;
+    margin-top: -36px;
+    background: no-repeat 50% 50%;
+    background-color: rgba(0,0,0,0.3);
+    text-indent: -999em;
+    cursor: pointer;
+    opacity: .5;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    background-image: url(/images/icon/arrow-right.png);
+}
+
+
+.multipleColumn .hd .next {
+	position: absolute;
+	top: 35px;
+	left: 15px;
+    display: block;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 100;
+    top: 50%;
+    width: 36px;
+    height: 72px;
+    margin-top: -36px;
+    background: no-repeat 50% 50%;
+    background-color: rgba(0,0,0,0.3);
+    text-indent: -999em;
+    cursor: pointer;
+    opacity: .5;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    background-image: url(/images/icon/arrow-left.png);
+}
+
+.multipleColumn .hd img{
+	height: 36px;
+	width: 36px;
+}
+
+.multipleColumn .hd ul {
+    float: right;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 10px;
+    zoom: 1;
+}
+
+.multipleColumn .hd ul li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    margin-right: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: url("images/icoCircle.gif") 0 -9px no-repeat;
+}
+
+.multipleColumn .hd ul li.on {
+    background-position: 0 0;
+}
+
+.multipleColumn .bd {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.multipleColumn .bd ul {
+    overflow: hidden;
+    zoom: 1;
+    width: 284px;
+    float: left;
+    _display: inline;
+}
+
+.multipleColumn .bd ul li {
+    margin: 0 8px;
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+
+.multipleColumn .bd ul li .pic {
+    text-align: center;
+}
+
+.multipleColumn .bd ul li .pic img {
+    width: 120px;
+    height: 90px;
+    display: block;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.multipleColumn .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+
+.multipleColumn .bd ul li .title {
+    line-height: 24px;
+}

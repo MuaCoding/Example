@@ -19,8 +19,14 @@
                             url: '/hexo/views/banner/03/index.html',
                             title: "榜单tab切换"
                         },{
-                            url: '/hexo/views/banner/04/index.html',
+                            url: '/views/banner/04/index.html',
                             title: "基础轮播"
+                        },{
+                            url: '/views/banner/05/index.html',
+                            title: "仿腾讯幻灯片"
+                        },{
+                            url: '/views/banner/06/index.html',
+                            title: "略缩幻灯片"
                         }
                     ],
                     [
@@ -58,6 +64,10 @@
                         {
                             url: '/hexo/views/other/02/index.html',
                             title: "星级评价"
+                        },
+                        {
+                            url: 'views/other/03/index.html',
+                            title: "wait"
                         }
                     ]
                 ];
