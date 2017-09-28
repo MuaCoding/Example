@@ -13,22 +13,22 @@
                             title: "常用的图片轮播相关"
                         },
                         {
-                            url: "/views/banner/01/index.html",
+                            url: "/hexo/views/banner/01/index.html",
                             title: "css3 选择轮播图"
                         },{
-                            url: '/views/banner/02/index.html',
+                            url: '/hexo/views/banner/02/index.html',
                             title: "产品展示轮播"
                         },{
-                            url: '/views/banner/04/index.html',
+                            url: '/hexo/views/banner/04/index.html',
                             title: "基础轮播"
                         },{
                             url: '/views/banner/05/index.html',
                             title: "仿腾讯幻灯片"
                         },{
-                            url: '/views/banner/06/index.html',
+                            url: '/hexo/views/banner/06/index.html',
                             title: "略缩幻灯片"
                         },{
-                            url: '/views/banner/07/index.html',
+                            url: '/hexo/views/banner/07/index.html',
                             title: "单列幻灯片"
                         }
                     ],
@@ -37,7 +37,7 @@
                             title: "时间日期效果"
                         },
                         {
-                            url: "/views/date/01/index.html",
+                            url: "/hexo/views/date/01/index.html",
                             title: "全日历"
                         }
                     ],
@@ -61,14 +61,14 @@
                             title: "其他练习"
                         },
                         {
-                            url: "/views/other/01/index.html",
+                            url: "hexo/views/other/01/index.html",
                             title: "乘法口诀表"
                         },
                         {
-                            url: '/views/other/02/index.html',
+                            url: 'hexo/views/other/02/index.html',
                             title: "星级评价"
                         },{
-                            url: 'views/other/03/index.html',
+                            url: 'hexo/views/other/03/index.html',
                             title: "wait"
                         },
                         {
