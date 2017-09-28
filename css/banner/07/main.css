@@ -12,33 +12,43 @@
 .picScroll-left .hd
 {
     overflow: hidden;
-
     height: 30px;
     padding: 0 10px;
 
     background: #f4f4f4;
 }
 
+
 .picScroll-left .hd .prev,
 .picScroll-left .hd .next
 {
     display: block;
-    float: right;
     overflow: hidden;
-
-    width: 5px;
-    height: 9px;
-    margin-top: 10px;
-    margin-right: 5px;
-
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    width: 36px;
+    height: 72px;
+    margin-top: -36px;
+    background: no-repeat 50% 50%;
+    background-color: rgba(0,0,0,0.3);
+    text-indent: -999em;
     cursor: pointer;
-
-    background: url('/images/dot/arrow.png') no-repeat;
+    opacity: .5;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
 }
 
 .picScroll-left .hd .next
 {
-    background-position: 0 -50px;
+    right: 5px;
+        background-image: url('/images/icon/arrow-right.png');
+}
+
+.picScroll-left .hd .prev
+{
+    left: 5px;
+    background-image: url('/images/icon/arrow-left.png');
 }
 
 .picScroll-left .hd .prevStop
@@ -83,6 +93,7 @@
 
 .picScroll-left .bd
 {
+    position: relative;
     padding: 10px;
 }
 
