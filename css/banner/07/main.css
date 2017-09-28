@@ -42,13 +42,13 @@
 .picScroll-left .hd .next
 {
     right: 5px;
-        background-image: url('/images/icon/arrow-right.png');
+        background-image: url('/hexo/images/icon/arrow-right.png');
 }
 
 .picScroll-left .hd .prev
 {
     left: 5px;
-    background-image: url('/images/icon/arrow-left.png');
+    background-image: url('/hexo/images/icon/arrow-left.png');
 }
 
 .picScroll-left .hd .prevStop
