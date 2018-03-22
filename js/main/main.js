@@ -74,6 +74,10 @@
                         {
                             url: '/views/other/04/index.html',
                             title: "vue起步"
+                        },
+                        {
+                            url: '/views/other/05/index.html',
+                            title: "javascript 基础"
                         }
                     ]
                 ];

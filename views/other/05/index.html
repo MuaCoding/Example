@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript 基础</title>
+	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+	<script type="text/javascript" src="../../../js/other/04/app.js"></script>
+</head>
+<body>
+	<div id="app">
+    <div v-html="message"></div>
+</div>
+	
+<script>
+	// var xiaoming = {
+	// 	name: 15,
+	// 	birth: 1993,
+	// 	age: function(){
+	// 		var that = this; //在方法内部一开始就捕获this
+	// 		function getBirth(){
+	// 			var y = new Date().getFullYear();
+	// 			return y - that.birth; //用that
+	// 		}
+
+	// 		return getBirth();
+	// 	}
+	// }
+	
+	// var count = 0;
+
+	// var old = parseInt;
+	// window.parseInt = function(){
+	// 	count += 1;
+	// 	return old.apply(null,arguments);
+	// }
+	// console.log('count = ' + count);
+
+	// javascript 的函数其实都指向某个变量。既然半两可以指向函数，函数的参数能接收变量，那么一个函数就可以接受另一个函数作为参数，这种函数称之为高阶函数
+
+	// map 
+	// function pow(x){
+	// 	return x *x ;
+	// }
+	// var arr = [1,2,3,4,5,6,7,8,9];
+	// var result = arr.map(pow);
+
+	function create_count(initial){
+		var x = initial || 0;
+		return {
+			inc: function(){
+				x += 1;
+				return x;
+			}
+		}
+	}
+
+	var c1 = create_count(10);
+	// c1.inc(); // 1
+	// console.log(c1.inc())
+	// console.log(c1.inc())
+	// console.log(c1.inc())
+
+	function make_pow(n){
+		return function(x){
+			console.log(n)
+			return Math.pow(x,n);
+		}
+	}
+
+	var pow2 = make_pow(2)
+	var pow3 = make_pow(3)
+	// console.log(pow3(7))
+
+	// (x,y,...rest) => {
+	// 	var i, sum = x + y;
+	// 	for (var i = 0; i < rest.length; i++) {
+	// 		sum += rest[i];
+	// 	}
+	// 	return sum;
+	// };
+
+	// x => ({foo: x});
+
+	//斐波那契数列
+
+	// function fib(max){
+	// 	var t, a = 0,b = 1, arr = [0,1];
+	// 	while(arr.length <max){
+	// 		[a,b] = [b,a+b];
+	// 		arr.push(b);
+	// 	}
+	// 	return arr;
+	// }
+
+	// 换成generator
+	function* fib(max){
+		var t, a = 0,b = 1, n = 0;
+		while(n <max){
+			yield a;
+			[a,b] = [b,a+b];
+			n ++;
+		}
+		return;
+	}
+	// var f = fib(5)
+	// f.next();
+	// for (var x of fib(10)) {
+	//     console.log(x); // 依次输出0, 1, 1, 2, 3, ...
+	// }
+
+	// 创建原型继承的一种方法
+	// var student = {
+	// 	name: 'robot',
+	// 	height: 1.2,
+	// 	run: function(){
+	// 		console.log(this.name + ' is running...');
+	// 	}
+	// };
+	// function createStudent(name){
+	// 	var o = Object.create(student);;
+	// 	o.name = name;
+	// 	return o;
+	// }
+
+	// var xiaoming = createStudent('小明');
+	// xiaoming.run();
+	// xiaoming.__proto__ === student;
+
+
+	// 原型继承
+	function PrimaryStudent(pros){
+		// 调用Student构造函数，绑定this变量
+		Student.call(this,pros);
+		this.grade = pros.grade || 1;
+	}
+
+
+	// 我们必须借助一个中间对象来实现正确的原型链，这个中间对象的原型要指向Student.prototype。为了实现这一点，参考道爷（就是发明JSON的那个道格拉斯）的代码，中间对象可以用一个空函数F来实现：
+
+	function F(){}
+
+	// 把F的原型指向Student.prototype:
+	F.prototype = Student.prototype;
+
+	// 把PrimaryStudent的原型指向一个新的P对象，P对象的原型正好指向Student.prototype;
+	PrimaryStudent.prototype = new F();
+
+	// 把PrimaryStudent原型的构造函数修复为PrimaryStudent;
+	PrimaryStudent.prototype.constructor = PrimaryStudent;
+
+	// 继续在PrimaryStudent原型（就是new F()对象）上定义方法：
+	PrimaryStudent.prototype.getGrade = function(){
+		return  this.grade;
+	};
+
+	// 创建xiaoming
+	var xiaoming = {
+		name: '小明'，
+		grade: 2
+	};
+	xiaoming.name;
+	xiaoming.grade;
+
+	// 验证原型：
+	xiaoming.__proto__ === PrimaryStudent.prototype;
+	xiaoming.__proto__.__proto__ === Student.prototype;
+</script>
+</head>
+<body>
+</body>
+</html>
