@@ -1,2 +1,2 @@
-# hexo
+# Demo
 #### Show some small things
