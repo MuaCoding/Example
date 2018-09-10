@@ -140,7 +140,7 @@
 	function F(){}
 
 	// 把F的原型指向Student.prototype:
-	F.prototype = Student.prototype;
+	// F.prototype = Student.prototype;
 
 	// 把PrimaryStudent的原型指向一个新的P对象，P对象的原型正好指向Student.prototype;
 	PrimaryStudent.prototype = new F();
@@ -155,7 +155,7 @@
 
 	// 创建xiaoming
 	var xiaoming = {
-		name: '小明'，
+		name: '小明',
 		grade: 2
 	};
 	xiaoming.name;
@@ -163,7 +163,7 @@
 
 	// 验证原型：
 	xiaoming.__proto__ === PrimaryStudent.prototype;
-	xiaoming.__proto__.__proto__ === Student.prototype;
+	// xiaoming.__proto__.__proto__ === Student.prototype;
 </script>
 </head>
 <body>

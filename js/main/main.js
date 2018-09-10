@@ -78,6 +78,10 @@
                         {
                             url: '/views/other/05/index.html',
                             title: "javascript 基础"
+                        },
+                        {
+                            url: '/views/other/06/index.html',
+                            title: "javascript 构造函数"
                         }
                     ]
                 ];
