@@ -4,6 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>面向对象</title>
+  <style>
+    #div1 div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      display: none;
+    }
+
+    .active {
+      background: red;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -154,7 +167,118 @@
     可见普通方法优先级高于原型
     */
 
+    var arr = [1, 2, 3, 4, 5];
+    var arr2 = [2, 2, 3, 3, 2];
+
+    arr.sum = function() {
+      var result = 0;
+      for (var i = 0; i < this.length; i++) {
+        result += this[i];
+      }
+      return result;
+    }
+
+    arr2.sum = function() {
+      var result = 0;
+      for (var i = 0; i < this.length; i++) {
+        result += this[i];
+      }
+      return result;
+    }
+
+    console.log(arr.sum()); //15
+    console.log(arr2.sum()); //12
+
+    // 原型：prototype:要写在构造函数下面
+    var arr3 = [1, 2, 3, 4, 5];
+    var arr4 = [2, 2, 3, 3, 2];
+
+    Array.prototype.sum = function() {
+      var result = 0;
+      for (var i = 0; i < this.length; i++) {
+        result += this[i];
+      }
+      return result;
+    }
+
+    console.log(arr3.sum()); //调用方法同普通方法
+    console.log(arr4.sum());
+
+    //普通方法优先级高于原型
+    var arr5 = [];
+    arr5.number = 10; //普通方法
+    Array.prototype.number = 20;
+    console.log(arr5.number);
+
   </script>
+
+  <script>
+    // 工厂方式之原型
+
+    function CreatePerson(name) {
+      this.name = name;
+    }
+
+    CreatePerson.prototype.sayName = function() {
+      alert(this.name);
+    }
+
+    var p1 = new CreatePerson('jill');
+    var p2 = new CreatePerson('vane');
+
+  </script>
+
+
+  <script>
+    // 面向对象的写法
+    // function 构造函数() {
+    //   对象.属性
+    // }
+    // 构造函数.原型.方法 = function() {};
+
+    // // 使用
+    // var 对象1 = new 构造函数();
+    // 对象1.方法();
+
+  </script>
+
+  <div id="div1">
+    <input class="active" type="button"value="1">
+    <input type="button"value="2">
+    <input type="button"value="3">
+    <div style="display: block">111</div>
+    <div>222</div>
+    <div>333</div>
+  </div>
+
+  <script>
+    window.onload = function() {
+      oParent = document.getElementById('div1');
+      aInput = oParent.getElementsByTagName('input');
+      aDiv = oParent.getElementsByTagName('div');
+
+      // init();
+
+      function init() {
+        for (var i = 0; i < aInput.length; i++) {
+          aInput[i].index = i;
+          aInput[i].onclick = change;
+        }
+      }
+
+      function change() {
+        for (var i = 0; i < aInput.length; i++) {
+          aInput[i].className = '';
+          aDiv[i].style.display = 'none';
+        }
+        this.className = "active";
+        aDiv[this.index].style.display = 'block';
+      }
+    }
+
+  </script>
+
+
 </body>
 
 </html>
